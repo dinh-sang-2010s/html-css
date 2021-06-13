@@ -1,0 +1,87 @@
+/* Reset css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Montserrat, sans-serif;
+}
+
+#header {
+  height: 46px;
+  background-color: #000;
+}
+#nav {
+  display: inline-block;
+}
+#nav > li {
+  display: inline-block;
+}
+#nav li {
+  position: relative;
+}
+#nav li:hover .sub-nav {
+  display: block;
+}
+#nav > li:hover > a,
+#nav .sub-nav li:hover a {
+  background-color: rgb(153, 149, 149);
+  color: #000;
+}
+
+#nav > li > a {
+  color: #fff;
+}
+
+#nav li a {
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0 24px;
+  text-transform: uppercase;
+  display: block;
+}
+#nav,
+.sub-nav {
+  list-style-type: none;
+}
+#nav .nav-arrow-down {
+  font-size: 10px;
+  margin-left: 2px;
+}
+#nav .sub-nav {
+  min-width: 160px;
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+  /* top: 100%; lay dung chiu cao cua no, cha - xx=no */
+  top: 100%;
+  left: 0;
+}
+#nav .sub-nav a {
+  color: #000;
+  padding: 0 12px;
+  line-height: 38px;
+}
+#header .search-btn {
+  color: #fff;
+  font-size: 20px;
+  float: right;
+  text-align: center;
+}
+#header .search-btn .search-icon {
+  display: inline-block;
+  line-height: 46px;
+  width: 62px;
+}
+#header .search-btn:hover {
+  background-color: #f00;
+  cursor: pointer;
+}
+
+#slider {
+  min-height: 500px;
+  background-color: #fff;
+}
