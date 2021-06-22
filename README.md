@@ -13,3 +13,9 @@
 -2.Website builder : Xây dựng trang Web
 -3.Build each part according to analysis : Xây dựng từng phần theo phân tích
 -4.Release: Hoàn thiện
+
+//============Responsive================
+Media Queries
++PC: >=1024pc
++Tablet: >=740px & < 1024px
++Mobile: < 740px

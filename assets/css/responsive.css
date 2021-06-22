@@ -1,0 +1,6 @@
+/* responsive for screen mobile */
+@media (max-width: 740px) {
+  #nav > li {
+    display: block;
+  }
+}
