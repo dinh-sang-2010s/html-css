@@ -18,9 +18,9 @@
       <div id="header">
         <ul id="nav">
           <li><a href="">Home</a></li>
-          <li><a href="">Band</a></li>
-          <li><a href="">Tour</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#the-band">Band</a></li>
+          <li><a href="#tours">Tour</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li>
             <a href="#">More<i class="nav-arrow-down ti-angle-down"></i></a>
             <ul class="sub-nav">
@@ -39,6 +39,9 @@
         <div class="search-btn">
           <i class="search-icon ti-search"></i>
         </div>
+        <div class="menu-mobile-btn" id="menu-mobile">
+          <i class="menu-icon ti-menu"></i>
+        </div>
       </div>
       <div id="slider">
         <div class="text-content">
@@ -48,7 +51,7 @@
       </div>
       <div id="content">
         <div class="content-section">
-          <h2 class="section-heading">The Band</h2>
+          <h2 class="section-heading" id="the-band">The Band</h2>
           <p class="section-sub-heading">We Love Music</p>
           <div class="section-about">
             <p class="about-text-content">
@@ -61,26 +64,26 @@
               reprehenderit quidem voluptate atque molestiae mollitia saepe?
             </p>
             <div class="about-members row mr-0 ml-0">
-              <div class="col col-3 text-center">
+              <div class="col col-3 text-center s-col-12 mt-32">
                 <p class="member-name">Name</p>
                 <img
-                  class="member-img"
+                  class="member-img s-col-6"
                   src="./assets/img/pexels-david-bartus-690779.jpg"
                   alt="pexels-david"
                 />
               </div>
-              <div class="col col-3 text-center">
+              <div class="col col-3 text-center s-col-12 mt-32">
                 <p class="member-name">Name</p>
                 <img
-                  class="member-img"
+                  class="member-img s-col-6"
                   src="./assets/img/pexels-david-bartus-690779.jpg"
                   alt="pexels-david"
                 />
               </div>
-              <div class="col col-3 text-center">
+              <div class="col col-3 text-center s-col-12 mt-32">
                 <p class="member-name">Name</p>
                 <img
-                  class="member-img"
+                  class="member-img s-col-6"
                   src="./assets/img/pexels-david-bartus-690779.jpg"
                   alt="pexels-david"
                 />
@@ -90,7 +93,7 @@
         </div>
 
         <!-- Begin: Tour -->
-        <div class="tour-section">
+        <div class="tour-section" id="tours">
           <div class="content-section">
             <h2 class="section-heading text-white">Tour Dates</h2>
             <p class="section-sub-heading text-white">
@@ -102,7 +105,7 @@
               <li>November<span class="quatity">3</span></li>
             </ul>
             <div class="row places-list">
-              <div class="col col-3">
+              <div class="col col-3 mt-16 s-col-12">
                 <img
                   class="place-img"
                   src="./assets/img/pexels-david-bartus-690779.jpg"
@@ -114,10 +117,10 @@
                   <p class="place-des">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   </p>
-                  <a class="btn" href="#">Buy Ticket</a>
+                  <a class="btn s-full-width" href="">Buy Ticket</a>
                 </div>
               </div>
-              <div class="col col-3">
+              <div class="col col-3 mt-16 s-col-12">
                 <img
                   class="place-img"
                   src="./assets/img/pexels-david-bartus-690779.jpg"
@@ -129,10 +132,10 @@
                   <p class="place-des">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   </p>
-                  <a class="btn" href="#">Buy Ticket</a>
+                  <a class="btn s-full-width" href="">Buy Ticket</a>
                 </div>
               </div>
-              <div class="col col-3">
+              <div class="col col-3 mt-16 s-col-12">
                 <img
                   class="place-img"
                   src="./assets/img/pexels-david-bartus-690779.jpg"
@@ -144,7 +147,7 @@
                   <p class="place-des">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   </p>
-                  <a class="btn" href="#">Buy Ticket</a>
+                  <a class="btn s-full-width" href="">Buy Ticket</a>
                 </div>
               </div>
             </div>
@@ -153,11 +156,11 @@
         <!-- End: Tour -->
 
         <!-- Begin: Contact -->
-        <div class="content-section">
+        <div class="content-section" id="contact">
           <h2 class="section-heading">Contact</h2>
           <p class="section-sub-heading">Fan? Drop a note!</p>
           <div class="row contact-content">
-            <div class="col col-2 contact-info">
+            <div class="col col-2 s-col-12 contact-info">
               <p>
                 <i class="ti-location-pin"></i>
                 Chicago, US
@@ -171,10 +174,10 @@
                 yahoo@gmail.com
               </p>
             </div>
-            <div class="col col-2 contact-form">
+            <div class="col col-2 s-col-12 contact-form">
               <form action="">
                 <div class="row">
-                  <div class="col col-2">
+                  <div class="col col-2 s-col-12">
                     <input
                       required
                       class="form-control"
@@ -182,7 +185,7 @@
                       placeholder="Name"
                     />
                   </div>
-                  <div class="col col-2">
+                  <div class="col col-2 s-col-12 s-mt-8">
                     <input
                       required
                       class="form-control"
@@ -201,7 +204,11 @@
                     />
                   </div>
                 </div>
-                <input class="form-submit btn" type="submit" value="SEND" />
+                <input
+                  class="form-submit btn s-full-width s-btn-submit"
+                  type="submit"
+                  value="SEND"
+                />
               </form>
             </div>
           </div>
@@ -237,5 +244,30 @@
         </p>
       </div>
     </div>
+    <script>
+      let header = document.getElementById("header");
+      let menu = document.getElementById("menu-mobile");
+      let currentHeightHeader = header.clientHeight;
+
+      menu.onclick = function () {
+        let isClosed = currentHeightHeader === header.clientHeight;
+        isClosed
+          ? (header.style.height = "auto")
+          : (header.style.height = null);
+      };
+
+      let menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+      for (let i = 0; i < menuItems.length; i++) {
+        let item = menuItems[i];
+
+        item.onclick = function (e) {
+          let isParentMenu =
+            item.nextElementSibling &&
+            item.nextElementSibling.contains("sub-nav");
+
+          !isParentMenu ? (header.style.height = null) : e.preventDefault();
+        };
+      }
+    </script>
   </body>
 </html>

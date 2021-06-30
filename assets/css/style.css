@@ -23,14 +23,21 @@ html {
   margin-right: -8px;
 }
 .mr-0 {
-  margin-right: 0px;
+  margin-right: 0px !important;
 }
 .ml-0 {
-  margin-left: 0px;
+  margin-left: 0px !important;
 }
 .mt-8 {
   margin-top: 8px !important;
 }
+.mt-16 {
+  margin-top: 16px !important;
+}
+.mt-32 {
+  margin-top: 32px !important;
+}
+
 .row::after {
   content: "";
   display: block;
@@ -61,6 +68,9 @@ html {
   margin-top: 15px;
   border: none;
   cursor: pointer;
+  text-align: center;
+  appearance: none;
+  -webkit-appearance: none;
 }
 .btn:hover {
   background-color: #ccc;
@@ -130,17 +140,33 @@ html {
   padding: 0 12px;
   line-height: 38px;
 }
+#header .menu-mobile-btn {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#header .menu-mobile-btn,
 #header .search-btn {
   color: #fff;
-  font-size: 20px;
   float: right;
   text-align: center;
 }
-#header .search-btn .search-icon {
+#header .menu-icon,
+#header .search-icon {
   display: inline-block;
   line-height: 46px;
+  font-size: 20px;
   width: 62px;
 }
+
+#header .menu-mobile-btn:hover {
+  background-color: #ccc;
+}
+#header .menu-mobile-btn:hover .menu-icon {
+  color: #000;
+}
+
 #header .search-btn:hover {
   background-color: #f00;
   cursor: pointer;
@@ -151,8 +177,7 @@ html {
   padding-top: 50%;
   /* 50% la chinh bang 50% chieu ngang cua chinh no,
    vi co khi nhiu anh ko bang kich thuoc nhau thi nhay anh khi chuyen doi*/
-  background: url("/assets/img/pexels-matthis-volquardsen-2179606.jpg") top
-    center/ cover no-repeat;
+  background: url("/assets/img/pexels-matthis-volquardsen-2179606.jpg") top center/ cover no-repeat;
   height: 100px;
   position: relative;
 }
@@ -199,7 +224,7 @@ html {
   /* tieng viet 1.6 */
 }
 #content .about-members {
-  margin-top: 48px;
+  margin-top: 32px;
   /* overflow: hidden;  c1*/
 }
 .member-name {
@@ -245,7 +270,7 @@ html {
   margin-top: -2px;
 }
 .places-list {
-  margin-top: 32px;
+  margin-top: 16px;
 }
 
 .place-img {
@@ -305,6 +330,9 @@ html {
 }
 #footer {
   padding: 64px 16px;
+}
+.social-list {
+  font-size: 25px;
 }
 .social-list a {
   text-decoration: none;
